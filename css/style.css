@@ -11,6 +11,11 @@ h3 {
 	color: #333;
 }
 
+h4 {
+	font: 14px "Open Sans Semibold", sans-serif;
+	color: #212121;
+}
+
 h6 {
 	font: 16px "Raleway Light", sans-serif;
 	color: #fff;
@@ -36,6 +41,11 @@ label {
 	color: #fff;
 }
 
+.left {
+	float: left;
+	display: block;
+}
+
 .button {
 	padding: 9px 23px;
 	font-size: 15px;
@@ -58,7 +68,8 @@ label {
 }
 
 .navbar-content, .header-content,
-.brand-content, .tabs-area  {
+.brand-content, .tabs-area, 
+.sublist-content  {
 	min-width: 960px;
 	max-width: 1100px;
 	margin: 0 auto;
@@ -293,7 +304,7 @@ label {
 
 .tabs-content .button {
 	margin-top: 50px;
-	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.4) ;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.4);
 }
 
 .tabs-area input.tab-selector-1:checked ~ .tabs-content .content-1,
@@ -303,4 +314,36 @@ label {
 	z-index: 100;
 	opacity: 1;
 	transition: all ease-out 0.5s 0.2s;
+}
+
+/*sublist*/
+.sublist {
+	padding-top: 100px;
+	padding-bottom: 125px;
+	overflow: hidden;
+}
+
+.sublist-content .left {
+	margin-top: 25px;
+	margin-right: 190px;
+	box-shadow: 0 15px 30px 1px rgba(0,0,0,0.4);
+}
+
+.sublist-description {
+	margin-bottom: 40px;
+}
+
+.sublist-content ul li{
+	background: url(../images/sublist_download.png) no-repeat;
+	margin-left: 643px;
+	padding-left: 65px;
+}
+
+.sublist-content ul li:first-child {
+	margin-bottom: 35px;
+	background: url(../images/sublist_upload.png) no-repeat;
+}
+
+.sublist-content h3, .sublist-content img {
+	margin-bottom: 25px;
 }
