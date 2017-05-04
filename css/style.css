@@ -1,13 +1,53 @@
 @import url(reset.css);
 @import url(fonts.css);
 
+h2 {
+	font: 36px Raleway, sans-serif;
+	color: #212121;
+}
+
+h3 {
+	font: 20px "Open Sans Bold", sans-serif;
+	color: #333;
+}
+
+h6 {
+	font: 16px "Raleway Light", sans-serif;
+	color: #fff;
+}
+
 a {
 	font: 14px "Open Sans Semibold", sans-serif;
 	color: #fff;
 	text-decoration: none;
 }
 
-.navbar-content  {
+a:hover {
+	text-decoration: underline;
+}
+
+.button {
+	padding: 9px 23px;
+	font-size: 15px;
+	border-radius: 2px;
+	background: #ff8b38;
+	display: inline-block;
+}
+
+.submit-button {
+	font: 15px "Open Sans Semibold", sans-serif;
+	color: #fff;
+	background: #ff9b51;
+}
+
+.transparent-button {
+	padding: 9px 30px;
+	border: 2px solid #f5f5f5;
+	font-size: 15px;
+	display: inline-block;
+}
+
+.navbar-content, .header-content  {
 	min-width: 960px;
 	max-width: 1100px;
 	margin: 0 auto;
@@ -38,4 +78,71 @@ a {
 .navbar-menu ul li {
 	float: left;
 	padding-left: 45px;
+}
+
+/*header*/
+.header {
+	background: url(../images/header_bg.jpg) no-repeat center center;
+	background-size: cover;
+	overflow: hidden;
+	padding-top: 110px;
+	padding-bottom: 145px;
+}
+
+.header-description {
+	width: 516px;
+	float: left;
+}
+
+.header-description  img, .header-description h2 {
+	margin-bottom: 33px;
+	color: #fff;
+}
+
+.header-description h6 {
+	width: 460px;
+	display: block;
+	margin-bottom: 30px;
+}
+
+.header-description .transparent-button {
+	margin-top: 10px;
+}
+
+.signup {
+	float: right;
+	background: url(../images/form_bg.png) no-repeat;
+	margin-top: 30px;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4) ;
+	background: #fff;
+}
+
+.signup input[type = "text"], .signup input[type = "password"] {
+	font: 14px "Open Sans", sans-serif;
+	color: #bdbdbd;
+	margin: 40px auto;
+	width: 261px;
+	padding: 5px 15px;
+	display: block;
+	border: 1px solid #fbfbfb;
+	border-top: none;
+	border-bottom-color: #d6d6d6;
+}
+
+.signup h3 {
+	padding: 13px 54px;
+	border: 1px solid #f5f5f5;
+	border-radius: 3px 3px 0 0;
+	background: #f5f5f5;
+}
+
+.signup h3 span {
+	color: #ff8b38;
+}
+
+.signup .submit-button {
+	padding: 17px 139px;
+	border: 1px solid #ff9b51;
+	border-radius: 0 0 3px 3px;
 }
