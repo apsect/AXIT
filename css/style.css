@@ -31,6 +31,11 @@ a:hover {
 	text-decoration: underline;
 }
 
+label {
+	font: 15px "Open Sans Bold", sans-serif;
+	color: #fff;
+}
+
 .button {
 	padding: 9px 23px;
 	font-size: 15px;
@@ -53,7 +58,7 @@ a:hover {
 }
 
 .navbar-content, .header-content,
-.brand-content  {
+.brand-content, .tabs-area  {
 	min-width: 960px;
 	max-width: 1100px;
 	margin: 0 auto;
@@ -120,7 +125,7 @@ a:hover {
 	background: url(../images/form_bg.png) no-repeat;
 	margin-top: 30px;
 	border-radius: 3px 3px 3px 3px;
-	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4) ;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);
 	background: #fff;
 }
 
@@ -187,4 +192,115 @@ a:hover {
 .gradient-border {
 	background: linear-gradient(180deg, #b7b7b7 0%, #eaeaea 66%);
 	height: 3px;
+}
+
+/*tabs*/
+.tabs {
+	background: #f5f5f5;
+	padding-top: 145px;
+	padding-bottom: 115px;
+}
+
+.tabs-area {
+	position: relative;
+	overflow: hidden;
+}
+
+.tabs-area input {
+	position: absolute;
+	z-index: 1000;
+	width: 110px;
+	height: 110px;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.tabs-area #tab-2 {
+	top: 111px;
+}
+
+.tabs-area #tab-3 {
+	top: 222px;
+}
+
+.tabs-area label {
+	background: #333;
+	line-height: 110px;
+	position: relative;
+	padding: 0 20px;
+	display: block;
+	width: 70px;
+	text-align: center;
+	margin-bottom: 1px;
+	float: left;
+	clear: both;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.4);
+}
+
+.tabs-area input:hover + label {
+	text-decoration: underline;
+}
+
+.tab-label-1 {
+	z-index: 1;
+	border-radius: 3px 3px 0 0;
+}
+
+.tab-label-2 {
+	z-index: 2;
+	border-radius: 0;
+}
+
+.tab-label-3 {
+	z-index: 3;
+	border-radius: 0 0 3px 3px;
+}
+
+.tabs-area input:checked + label {
+	background: #ff8b38;
+	z-index: 10px;
+}
+
+.tabs-content {
+	position: relative;
+	width: auto;
+	z-index: 5;
+	margin-left: 210px;
+}
+
+.tabs-content div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all linear 0.3s;
+	z-index: 1;
+}
+
+.tabs-content h3, .tabs-content p {
+	padding-right: 400px;
+}
+
+.tabs-content h3 {
+	margin-bottom: 50px;
+}
+
+.tabs-content img {
+	float: right;
+	margin-top: -47px;
+}
+
+.tabs-content .button {
+	margin-top: 50px;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.4) ;
+}
+
+.tabs-area input.tab-selector-1:checked ~ .tabs-content .content-1,
+.tabs-area input.tab-selector-2:checked ~ .tabs-content .content-2,
+.tabs-area input.tab-selector-3:checked ~ .tabs-content .content-3,
+.tabs-area input.tab-selector-4:checked ~ .tabs-content .content-4 {
+	z-index: 100;
+	opacity: 1;
+	transition: all ease-out 0.5s 0.2s;
 }
