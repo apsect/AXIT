@@ -46,6 +46,11 @@ label {
 	display: block;
 }
 
+.right {
+	float: right;
+	display: block;
+}
+
 .button {
 	padding: 9px 23px;
 	font-size: 15px;
@@ -69,7 +74,7 @@ label {
 
 .navbar-content, .header-content,
 .brand-content, .tabs-area, 
-.sublist-content  {
+.sublist-content, .picture-section-content  {
 	min-width: 960px;
 	max-width: 1100px;
 	margin: 0 auto;
@@ -344,6 +349,24 @@ label {
 	background: url(../images/sublist_upload.png) no-repeat;
 }
 
-.sublist-content h3, .sublist-content img {
+.sublist-content h3, .sublist-content img,
+.picture-section-content  h3, .picture-section-content img {
 	margin-bottom: 25px;
+}
+
+/*picture-section*/
+.picture-section {
+	padding-top: 85px;
+	padding-bottom: 115px;
+	background: #f5f5f5;
+	overflow: hidden;
+}
+
+.picture-section-description {
+	margin-right: 643px;
+	margin-top: 25px;
+}
+
+.picture-section-content img {
+	box-shadow: 0 15px 30px 1px rgba(0,0,0,0.4);
 }
