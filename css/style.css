@@ -4,6 +4,7 @@
 h1 {
 	font: 94px "Raleway Bold", sans-serif;
 	color: #fff;
+	font-weight: 400;
 }
 
 h2 {
@@ -14,16 +15,19 @@ h2 {
 h3 {
 	font: 20px "Open Sans Bold", sans-serif;
 	color: #333;
+	font-weight: 400;
 }
 
 h4 {
 	font: 14px "Open Sans Semibold", sans-serif;
 	color: #212121;
+	font-weight: 400;
 }
 
 h5 {
 	font: 14px "Open Sans Bold", sans-serif;
 	color: #fff;
+	font-weight: 400;
 }
 
 h6 {
@@ -40,6 +44,7 @@ a {
 	font: 14px "Open Sans Semibold", sans-serif;
 	color: #fff;
 	text-decoration: none;
+	font-weight: 400;
 }
 
 a:hover {
@@ -49,6 +54,10 @@ a:hover {
 label {
 	font: 15px "Open Sans Bold", sans-serif;
 	color: #fff;
+}
+
+input, textarea {
+	outline: 0;
 }
 
 .left {
@@ -408,7 +417,7 @@ label {
 	margin-top: 25px;
 }
 
-.picture-section-content img {
+.picture-section-content .right img {
 	box-shadow: 0 15px 30px 1px rgba(0,0,0,0.4);
 }
 
@@ -569,12 +578,11 @@ label {
 .contact-content .left, .contact-content .right {
 	display: block;
 	width: 45%;
-    height: 145px;
 }
 
 .contact-content .right {
 	resize: none;
-	height: 139px;
+	height: 138px;
 }
 
 .contact-content input[type = "text"], .contact-content input[type = "password"] {
@@ -599,7 +607,7 @@ label {
 
 .contact-content .submit-button {
 	border: none;
-	margin: 50px auto 3px;
+	margin: 20px 43% 3px;
 	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.4);
 }
 
