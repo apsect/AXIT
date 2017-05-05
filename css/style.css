@@ -4,7 +4,6 @@
 h1 {
 	font: 94px "Raleway Bold", sans-serif;
 	color: #fff;
-	font-weight: 400;
 }
 
 h2 {
@@ -15,19 +14,16 @@ h2 {
 h3 {
 	font: 20px "Open Sans Bold", sans-serif;
 	color: #333;
-	font-weight: 400;
 }
 
 h4 {
 	font: 14px "Open Sans Semibold", sans-serif;
 	color: #212121;
-	font-weight: 400;
 }
 
 h5 {
 	font: 14px "Open Sans Bold", sans-serif;
 	color: #fff;
-	font-weight: 400;
 }
 
 h6 {
@@ -44,7 +40,6 @@ a {
 	font: 14px "Open Sans Semibold", sans-serif;
 	color: #fff;
 	text-decoration: none;
-	font-weight: 400;
 }
 
 a:hover {
@@ -194,6 +189,7 @@ input, textarea {
 	border-radius: 3px 3px 3px 3px;
 	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);
 	background: #fff;
+	
 }
 
 .signup input[type = "text"], .signup input[type = "password"] {
@@ -417,7 +413,7 @@ input, textarea {
 	margin-top: 25px;
 }
 
-.picture-section-content .right img {
+.picture-section-content .right {
 	box-shadow: 0 15px 30px 1px rgba(0,0,0,0.4);
 }
 
